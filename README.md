@@ -14,7 +14,7 @@
 
 ## Built With
 
-My personal portfolio <a href="https://portfolio-53108.web.app/" target="_blank">Shashank Indukuri | Portfolio</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://portfolio-53108.web.app/" target="_blank">Shashank Indukuri | Portfolio</a> which features some of my projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
