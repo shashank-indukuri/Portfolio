@@ -1,5 +1,5 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
+  Portfolio Website<br/>
   <a href="https://portfolio-53108.web.app/" target="_blank">Shashank Indukuri | Portfolio</a>
 </h2>
 
