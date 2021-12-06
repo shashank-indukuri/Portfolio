@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import todo from "../../Assets/Projects/todo.png";
 import netflix from "../../Assets/Projects/netflix.png";
 import instagram from "../../Assets/Projects/instagram.png";
 import burger from "../../Assets/Projects/burger.png";
@@ -15,16 +16,24 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          I've worked on.
-        </p>
+        <p style={{ color: "white" }}>I've worked on.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={todo}
+              isBlog={false}
+              title="To-Do"
+              description="A MERN stack web application that lets users to build and manage to-do lists. To add, change, or delete todos, the user must first login. Automated the CI/CD workflow using Github actions."
+              link="https://to-do-mern-stack.herokuapp.com/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={netflix}
               isBlog={false}
               title="Netflix Clone"
-              description="A Netflix site clone that presents dynamic content of movies separated into different categories. Any title will play a trailer from a YouTube source embedded below the title when you click on it."
+              description="A Netflix clone with dynamic content of movies divided into different categories. When you click on any title, it will play a trailer from a YouTube source embedded underneath the title."
               link="https://netflix-clone-23c53.web.app/"
             />
           </Col>
@@ -61,7 +70,6 @@ function Projects() {
               The teacher may also monitor students' attendance, which aids in the grading process."
             />
           </Col>
-
         </Row>
       </Container>
     </Container>
