@@ -30,21 +30,21 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={netflix}
-              isBlog={false}
-              title="Netflix Clone"
-              description="A Netflix clone with dynamic content of movies divided into different categories. When you click on any title, it will play a trailer from a YouTube source embedded underneath the title."
-              link="https://netflix-clone-23c53.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={instagram}
               isBlog={false}
               title="Instagram Clone"
               description="A clone for Instagram with authentication implemented with firebase. It allows users to post photos with captions after logging in. Everyone has access to the posted posts and can leave comments on any of them"
               link="https://instagram-clone-61f1f.web.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={netflix}
+              isBlog={false}
+              title="Netflix Clone"
+              description="A Netflix clone with dynamic content of movies divided into different categories. When you click on any title, it will play a trailer from a YouTube source embedded underneath the title."
+              link="https://netflix-clone-23c53.web.app/"
             />
           </Col>
 
