@@ -7,7 +7,7 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiAndroid,
+  DiSwift,
   DiMysql,
   DiGit,
 } from "react-icons/di";
@@ -35,7 +35,7 @@ function Techstack() {
         <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiAndroid />
+        <DiSwift />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMysql />
