@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import starbucks from "../../Assets/Projects/starbucks.png";
 import todo from "../../Assets/Projects/todo.png";
 import netflix from "../../Assets/Projects/netflix.png";
 import instagram from "../../Assets/Projects/instagram.png";
@@ -20,10 +21,22 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={starbucks}
+              isBlog={false}
+              title="Starbucks Tracker"
+              description="The Starbucks Tracker iOS application counts the calories and caffeine consumed by the user based on the Starbucks menu. The user may add any drink from the menu and select from the customizable choices provided. 
+              Calories and caffeine are computed and presented on the home screen based on the selection."
+              link="https://github.com/shashank-indukuri/Starbucks-Tracker"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={todo}
               isBlog={false}
               title="To-Do"
-              description="A MERN stack web application that lets users to build and manage to-do lists. To add, change, or delete todos, the user must first login. Automated the CI/CD workflow using Github actions."
+              description="A MERN stack web application that lets users to build and manage to-do lists. To add, change, or delete todos, the user must first login. Automated the CI/CD workflow using Github actions. 
+              Developed with React.js, React Bootstrap, Express.js, and MongoDB."
               link="https://to-do-mern-stack.herokuapp.com/"
             />
           </Col>
@@ -43,7 +56,7 @@ function Projects() {
               imgPath={netflix}
               isBlog={false}
               title="Netflix Clone"
-              description="A Netflix clone with dynamic content of movies divided into different categories. When you click on any title, it will play a trailer from a YouTube source embedded underneath the title."
+              description="A Netflix clone with dynamic content of movies divided into different categories. When you click on any title, it will play a trailer from a YouTube source embedded underneath the title. Designed using React.js, React Bootstrap, and Axios."
               link="https://netflix-clone-23c53.web.app/"
             />
           </Col>
