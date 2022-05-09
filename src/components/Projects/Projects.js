@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import spaceinvaders from "../../Assets/Projects/space_invaders.png";
 import starbucks from "../../Assets/Projects/starbucks.png";
 import todo from "../../Assets/Projects/todo.png";
 import netflix from "../../Assets/Projects/netflix.png";
@@ -19,6 +20,17 @@ function Projects() {
         </h1>
         <p style={{ color: "white" }}>I've worked on.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={spaceinvaders}
+              isBlog={false}
+              title="Space Invaders"
+              description="The Space Invaders is a most famous arcade game developed using the most effecient optimatization techniques and more than fifteen design pattenrs to create this real-time data driven application.
+              The goal of this project is to replicate the functionality of the original game by using best software engineering practices like Iterative Development, Testing, and Continuous Integration. The game is also implemented for two player mode."
+              link="https://github.com/shashank-indukuri/Space_Invaders"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={starbucks}
