@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import imdb from "../../Assets/Projects/imdb.png";
 import spaceinvaders from "../../Assets/Projects/space_invaders.png";
 import starbucks from "../../Assets/Projects/starbucks.png";
 import todo from "../../Assets/Projects/todo.png";
@@ -20,6 +21,17 @@ function Projects() {
         </h1>
         <p style={{ color: "white" }}>I've worked on.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={imdb}
+              isBlog={false}
+              title="IMDB - A Complete Movie Hub"
+              description="The IMDB is a full-stack enterprise application developed from User Interface using React.js to Persistence data using SQL and NoSQL. The users can view the movies based on the categories, detail description of a movie,
+               CRUD operations on Rating and Reviews and book a ticket of a selected movie"
+              link="https://imdb-se452.herokuapp.com/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={spaceinvaders}
